@@ -1,0 +1,206 @@
+.glass-footer {
+  background: #f8fafc !important;
+  border-top: 1px solid rgba(0, 0, 0, 0.05) !important;
+  color: #0f172a;
+}
+
+.footer-text {
+  color: rgba(15, 23, 42, 0.6) !important;
+}
+
+.footer-links li {
+  margin-bottom: 0.8rem;
+}
+
+.footer-link {
+  color: rgba(15, 23, 42, 0.6);
+  text-decoration: none;
+  transition: all var(--transition-fast);
+  display: inline-block;
+}
+
+.footer-link:hover {
+  color: var(--color-primary);
+  transform: translateX(5px);
+}
+
+.newsletter-input-container .form-control:focus {
+  box-shadow: none;
+  outline: none;
+  border: 1px solid var(--color-primary) !important;
+}
+
+.social-icon-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.social-icon-circle:hover {
+  transform: translateY(-5px);
+  color: white;
+}
+
+.social-icon-circle.instagram:hover {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  box-shadow: 0 5px 15px rgba(220, 39, 67, 0.4);
+}
+
+.social-icon-circle.linkedin:hover {
+  background-color: #0077b5;
+  box-shadow: 0 5px 15px rgba(0, 119, 181, 0.4);
+}
+
+.social-icon-circle.pinterest:hover {
+  background-color: #E60023;
+  box-shadow: 0 5px 15px rgba(230, 0, 35, 0.4);
+}
+
+/* Advanced Footer Styles */
+.footer-decoration-1 {
+  position: absolute;
+  top: -100px;
+  right: -50px;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0) 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.footer-decoration-2 {
+  position: absolute;
+  bottom: 0;
+  left: -100px;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0) 60%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.footer-heading-underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 30px;
+  background-color: rgba(255,255,255,0.5);
+  transition: width 0.3s ease;
+}
+
+.col-lg-2:hover .footer-heading-underline,
+.col-lg-3:hover .footer-heading-underline {
+  width: 50px;
+}
+
+.footer-link-advanced {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+  position: relative;
+}
+
+.footer-link-advanced:hover {
+  color: #fff;
+  transform: translateX(5px);
+}
+
+.footer-link-advanced::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  transition: width 0.3s ease;
+}
+
+.footer-link-advanced:hover::after {
+  width: 100%;
+}
+
+.footer-contact-item {
+  transition: all 0.3s ease;
+}
+
+.footer-contact-item:hover {
+  transform: translateX(5px);
+  color: #fff !important;
+}
+
+.newsletter-input {
+  background: rgba(255,255,255,0.1) !important;
+  border: 1px solid rgba(255,255,255,0.2) !important;
+  color: white !important;
+  border-radius: 30px !important;
+  padding: 12px 20px !important;
+}
+
+.newsletter-input:focus {
+  background: rgba(255,255,255,0.15) !important;
+  border-color: rgba(255,255,255,0.5) !important;
+  box-shadow: 0 0 10px rgba(255,255,255,0.1) !important;
+}
+
+.newsletter-input::placeholder {
+  color: white !important;
+  opacity: 0.8 !important;
+}
+
+.newsletter-btn {
+  border-radius: 30px !important;
+  padding: 10px 25px !important;
+  background: white !important;
+  color: var(--color-primary) !important;
+  font-weight: 700 !important;
+  border: none !important;
+  transition: all 0.3s ease !important;
+  letter-spacing: 1px;
+}
+
+.newsletter-btn:hover {
+  background: #f0f0f0 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.footer-bottom-link {
+  color: rgba(255,255,255,0.6);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-bottom-link:hover {
+  color: white;
+}
+
+.back-to-top-btn {
+  background: rgba(255,255,255,0.1);
+  color: white;
+  border: 1px solid rgba(255,255,255,0.2);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.back-to-top-btn:hover {
+  background: white;
+  color: var(--color-primary);
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
