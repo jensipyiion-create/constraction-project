@@ -37,6 +37,7 @@ function About() {
                   src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
                   alt="Construction Team" 
                   className="img-fluid rounded-4 shadow position-relative z-1"
+                  style={{ objectFit: 'cover' }}
                 />
               </div>
             </div>
@@ -45,25 +46,28 @@ function About() {
               className={`col-lg-6 px-lg-3 px-xl-5 ${textReveal.isVisible ? 'animate-fade-up' : ''}`} 
               style={{ opacity: textReveal.isVisible ? 1 : 0, animationDelay: "0.2s" }}
             >
-              <div className="section-subtitle">Our Story</div>
-              <h2 className="section-title mb-4">About BuildPro</h2>
-              <p className="fs-5 text-muted mb-4" style={{ lineHeight: "1.8" }}>
+              <div className="text-uppercase tracking-wider fw-bold text-muted mb-2" style={{ fontSize: '0.85rem', letterSpacing: '2px' }}>Our Story</div>
+              <h2 className="mb-4" style={{ fontFamily: 'var(--font-primary)', color: '#222', fontSize: '2.5rem', fontWeight: 700 }}>About BuildPro</h2>
+              <p className="text-muted mb-4" style={{ fontSize: '1.05rem', lineHeight: 1.8 }}>
                 With over 20 years of experience in the construction industry, BuildPro has established itself as a leader in delivering high-quality residential and commercial projects.
               </p>
-              <p className="text-muted mb-4" style={{ lineHeight: "1.8" }}>
+              <p className="text-muted mb-4" style={{ fontSize: '1.05rem', lineHeight: 1.8 }}>
                 Our mission is to build structures that stand the test of time while providing exceptional customer service. We believe in transparency, integrity, and hard work. Our team of skilled professionals is dedicated to turning your vision into reality.
               </p>
-              <ul className="list-unstyled mb-0 d-flex flex-wrap gap-3 mt-4">
-                <li className="d-flex align-items-center bg-transparent p-3 rounded-3 border border-secondary" style={{ borderColor: "rgba(0,0,0,0.1) !important" }}>
-                  <i className="bi bi-check-circle-fill text-accent fs-4 me-3"></i> <strong className="fw-medium">Licensed & Insured</strong>
-                </li>
-                <li className="d-flex align-items-center bg-transparent p-3 rounded-3 border border-secondary" style={{ borderColor: "rgba(0,0,0,0.1) !important" }}>
-                  <i className="bi bi-check-circle-fill text-accent fs-4 me-3"></i> <strong className="fw-medium">Award-Winning Team</strong>
-                </li>
-                <li className="d-flex align-items-center bg-transparent p-3 rounded-3 border border-secondary" style={{ borderColor: "rgba(0,0,0,0.1) !important" }}>
-                  <i className="bi bi-check-circle-fill text-accent fs-4 me-3"></i> <strong className="fw-medium">100% Satisfaction</strong>
-                </li>
-              </ul>
+              <div className="d-flex flex-column gap-3 mt-4">
+                <div className="d-flex align-items-center rounded-3 border px-4 py-3 bg-transparent feature-checkbox" style={{ borderColor: '#d1d1d1', maxWidth: '320px' }}>
+                  <div className="rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0" style={{ backgroundColor: '#5c604d', width: '26px', height: '26px' }}>
+                    <i className="bi bi-check text-white fs-5" style={{ marginTop: '1px' }}></i>
+                  </div>
+                  <span className="fw-semibold text-dark" style={{ fontSize: '0.95rem' }}>Licensed & Insured</span>
+                </div>
+                <div className="d-flex align-items-center rounded-3 border px-4 py-3 bg-transparent feature-checkbox" style={{ borderColor: '#d1d1d1', maxWidth: '320px' }}>
+                  <div className="rounded-circle d-flex align-items-center justify-content-center me-3 flex-shrink-0" style={{ backgroundColor: '#5c604d', width: '26px', height: '26px' }}>
+                    <i className="bi bi-check text-white fs-5" style={{ marginTop: '1px' }}></i>
+                  </div>
+                  <span className="fw-semibold text-dark" style={{ fontSize: '0.95rem' }}>Award-Winning Team</span>
+                </div>
+              </div>
             </div>
           </div>
 

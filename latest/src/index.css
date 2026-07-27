@@ -385,7 +385,7 @@ img {
   justify-content: center;
   align-items: center;
   background: linear-gradient(135deg, rgba(248, 250, 252, 0.9) 0%, rgba(255, 255, 255, 0.95) 100%), url('https://images.unsplash.com/photo-1541888081622-1ae024508492?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80') center/cover;
-  padding: 100px 0 40px;
+  padding: 160px 0 40px;
   position: relative;
 }
 
@@ -484,7 +484,7 @@ h4, .h4 {
 
 @media (max-width: 768px) {
   .page-hero-section {
-      padding-top: 100px;
+      padding-top: 120px;
       padding-bottom: 30px;
   }
     
